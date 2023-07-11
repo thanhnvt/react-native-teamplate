@@ -9,7 +9,7 @@ const AppNavigation=()=>{
     return (
       <NavigationContainer>
         {
-          isAuth?<AuthStackNavigation/>:<MainStackNavigator/>
+          !isAuth?<AuthStackNavigation/>:<MainStackNavigator/>
         }
       </NavigationContainer>
     );
