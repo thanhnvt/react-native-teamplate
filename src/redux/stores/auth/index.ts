@@ -1,6 +1,9 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 
 export interface AuthStates {
+  tokenInfo: any
+  user: any
+  isLogin: boolean
 }
 
 const defaultState: AuthStates = {
@@ -13,6 +16,7 @@ const authSlice = createSlice({
   initialState: defaultState,
   reducers: {
     login: (state): AuthStates => {
+      console.log("login",state);
       return {
         ...state,
         isLogin: true

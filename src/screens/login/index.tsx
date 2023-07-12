@@ -4,6 +4,7 @@ import styles from "./styles"
 import { NavigationTypeProps } from "../../constant/navigation";
 import ScreensName from "../../constant/screensName";
 import { useDispatch } from "react-redux";
+import { sagaActions } from "../../sagas/actions";
 
 interface LoginScreenProps extends NavigationTypeProps {}
 
@@ -12,8 +13,7 @@ const LoginScreen: React.FC<LoginScreenProps> =({navigation})=>{
     const dispatch = useDispatch()
 
     const onLogin=()=>{
-        console.log("LOGIN_REQUEST");
-        dispatch({type:'LOGIN_REQUEST'})
+        dispatch({type: sagaActions.LOGIN_REQUEST})
     }
 
     const onRegister=()=>{
