@@ -6,7 +6,6 @@ import MainStackNavigator from './stack/main';
 import { RootState } from '../redux';
 
 function AppNavigation() {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const { isLogin } = useSelector((state: RootState) => state.auth);
   return (
     <NavigationContainer>
