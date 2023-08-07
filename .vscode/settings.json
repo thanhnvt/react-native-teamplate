@@ -1,0 +1,46 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "editor.formatOnSave": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#FD9240",
+    "activityBar.activeBorder": "#d73911",
+    "activityBar.background": "#FD9240",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#d73911",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#FD9240",
+    "statusBar.background": "#022A4C",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#FD9240",
+    "statusBarItem.remoteBackground": "#022A4C",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#022A4C",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#022A4C99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "cSpell.words": [
+    "Actionsheet",
+    "baronha",
+    "collapsable",
+    "ellipsize",
+    "favourite",
+    "flatlist",
+    "libertycarz",
+    "Modalize",
+    "navigations",
+    "noti",
+    "pressable",
+    "RNFS",
+    "sortby",
+    "unsubcribe",
+    "Zoomable"
+  ],
+  "editor.tabSize": 2,
+  "java.compile.nullAnalysis.mode": "automatic"
+}

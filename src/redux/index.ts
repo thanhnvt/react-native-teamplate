@@ -1,19 +1,20 @@
-import {configureStore, getDefaultMiddleware} from '@reduxjs/toolkit'
-import createSagaMiddleware from 'redux-saga'
-import reducers from './stores'
-import saga from '../sagas/auth'
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import createSagaMiddleware from 'redux-saga';
+import reducers from './stores';
+import saga from '../sagas/auth';
 
+export type RootState = ReturnType<typeof reducers>;
 
-let sagaMiddleware = createSagaMiddleware();
+const sagaMiddleware = createSagaMiddleware();
 const middleware = [...getDefaultMiddleware({ thunk: false }), sagaMiddleware];
 
 const store = configureStore({
   reducer: {
-    todo: reducers
+    todo: reducers,
   },
-  middleware
+  middleware,
 });
 
 sagaMiddleware.run(saga);
 
-export default store
+export default store;

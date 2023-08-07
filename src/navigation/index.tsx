@@ -1,20 +1,18 @@
 import React from 'react';
-import {View} from 'react-native'
-import { NavigationContainer } from "@react-navigation/native"
+import { NavigationContainer } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
 import AuthStackNavigation from './stack/auth';
 import MainStackNavigator from './stack/main';
-import { useSelector } from 'react-redux';
-import { AuthStates } from '../redux/stores/auth';
+import { RootState } from '../redux';
 
-const AppNavigation=()=>{
-    const isLogin = useSelector((state: any) => state.todo.auth.isLogin)    
-    return (
-      <NavigationContainer>
-        {
-          !isLogin?<AuthStackNavigation/>:<MainStackNavigator/>
-        }
-      </NavigationContainer>
-    );
-  }
+function AppNavigation() {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const { isLogin } = useSelector((state: RootState) => state.auth);
+  return (
+    <NavigationContainer>
+      {!isLogin ? <AuthStackNavigation /> : <MainStackNavigator />}
+    </NavigationContainer>
+  );
+}
 
-  export default AppNavigation
+export default AppNavigation;
