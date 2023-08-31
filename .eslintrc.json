@@ -14,5 +14,8 @@
   "parserOptions": {
     "project": "tsconfig.json"
   },
-  "rules": {}
+  "rules": {
+    "max-len": ["error",{"code": 200}
+    ]
+  }
 }

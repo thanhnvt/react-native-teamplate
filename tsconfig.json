@@ -1,6 +1,17 @@
 {
   "compilerOptions": {
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@access/*": ["src/access/*"],
+      "@constant/*": ["src/constant/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@redux/*": ["src/redux/*"],
+      "@sagas/*": ["src/sagas/*"],
+      "@screens/*": ["src/screens/*"],
+      "@app/*": ["src/*"],
+      "*": ["./*"],
+    }
   },
   "extends": "@tsconfig/react-native/tsconfig.json",
   "exclude": ["__tests__/**/*-test.ts"]
