@@ -4,7 +4,6 @@ module.exports = {
   bracketSpacing: true,
   singleQuote: true,
   // trailingComma: 'none',
-  tabWidth: 2,
+  // tabWidth: 4,
   semi: true,
-  "prettier.useTabs": true,
 };
