@@ -15,7 +15,7 @@
     "@react-navigation/bottom-tabs": "^6.5.8",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/native-stack": "^6.9.13",
-    "@reduxjs/toolkit": "^1.9.5",
+    "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.4.0",
     "dayjs": "^1.11.9",
     "formik": "^2.4.3",
@@ -34,7 +34,8 @@
     "react-native-vector-icons": "^10.0.0",
     "react-native-video": "^5.2.1",
     "react-native-webview": "^13.5.1",
-    "react-redux": "^8.1.1",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.0",
     "redux-saga": "^1.2.3"
   },
   "devDependencies": {

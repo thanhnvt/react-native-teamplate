@@ -1,7 +1,8 @@
-import React from "react";
-import AppNavigation from "../navigation";
-const RootScreen =()=>{
-    return <AppNavigation/>
+import React from 'react';
+import AppNavigation from '../navigation';
+
+function RootScreen() {
+  return <AppNavigation />;
 }
 
-export default RootScreen
+export default RootScreen;
