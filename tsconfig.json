@@ -6,7 +6,7 @@
       "@access/*": ["src/access/*"],
       "@constant/*": ["src/constant/*"],
       "@navigation/*": ["src/navigation/*"],
-      "@redux/*": ["src/redux/*"],
+      "@redux/*": ["src/reduxs/*"],
       "@sagas/*": ["src/sagas/*"],
       "@screens/*": ["src/screens/*"],
       "@app/*": ["src/*"],

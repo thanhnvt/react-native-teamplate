@@ -1,6 +1,6 @@
 import { takeEvery, put } from 'redux-saga/effects';
 import { sagaActions } from '../actions';
-import { login } from '../../redux/stores/auth';
+import { login } from '../../reduxs/stores/auth';
 
 function* loginRequest() {
   try {

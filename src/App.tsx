@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './redux';
+import store from './reduxs';
 import RootScreen from './screens/rootScreen';
 
 function App() {

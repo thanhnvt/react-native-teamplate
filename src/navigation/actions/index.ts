@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import {
   CommonActions,
   createNavigationContainerRef,
   StackActions,
 } from '@react-navigation/native';
 import ScreensName from '@constant/screensName';
-import store from '@redux/index';
+import store from '@app/reduxs/index';
 
 export const navigationRef = createNavigationContainerRef();
 
@@ -33,8 +34,7 @@ export const navigateAndCheckAuth = (name: string, params?: never): void => {
   }
 };
 
-export const getCurrentScreenName = () => navigationRef?.getState()?.routes[navigationRef.getState().index]
-  ?.name;
+export const getCurrentScreenName = () => navigationRef?.getState()?.routes[navigationRef.getState().index]?.name;
 
 export const resetScreen = (
   name: string,

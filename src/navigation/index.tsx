@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
 import AuthStackNavigation from './stack/auth';
 import MainStackNavigator from './stack/main';
-import { RootState } from '../redux';
+import { RootState } from '../reduxs';
 import { navigationRef } from './actions';
 
 function AppNavigation() {
